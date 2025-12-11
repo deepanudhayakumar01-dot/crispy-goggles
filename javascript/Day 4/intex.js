@@ -59,10 +59,23 @@
 // console.log(show(1,2));
 //  
 
-(()=>{
-    console.log("hello");
+// (()=>{
+//     console.log("hello");
     
-})();
+// })();
+
+const marks = [100, 70, 80];
+
+const total = marks.reduce((sum, mark) => sum < mark ? sum=mark : sum , 0);
+
+console.log(total); // 200
+
+// Simple memory trick
+
+// filter = remove things
+// map = change things
+// reduce = combine things
+
  
 
  
