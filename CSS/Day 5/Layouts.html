@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            float: right;
+            background-color: aqua;
+            border: 2px solid blueviolet;
+        }
+        .clearfix ::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        p{
+            border: 2px solid bisque;
+        }
+        body{
+           height: 200px;
+           width: 500px;
+           border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eveniet exercitationem maiores fugiat hic deleniti ratione nisi deserunt! Officia rem sint recusandae ipsa, pariatur vitae odit voluptatum deleniti amet non Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque facilis, voluptatum nisi porro aspernatur pariatur ad praesentium voluptatem ipsum impedit nulla omnis libero dolorum debitis consequatur provident dolore. Asperiores sequi ad cumque quia? Cumque blanditiis doloribus quas dolorum hic, officiis nostrum, mollitia, esse iste voluptates facere modi. Inventore, alias doloremque..</p>
+</body>
+</html>
