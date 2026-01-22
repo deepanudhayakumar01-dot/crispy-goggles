@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="name" />
+
+    <script>
+      const name = document.getElementById("name");
+      name.addEventListener("keyup", () => {
+        console.log(name.value); // actual key value (a, Enter, Shift)
+        console.log(e.code); // physical key (KeyA, Enter)
+        console.log(e.ctrlKey); // true if Ctrl is pressed
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Layout</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <style>
+    .sidebar {
+      height: 100vh;
+    }
+    .carousel img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DEEPAN UDHAYAKUMAR</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN LAYOUT -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- SIDEBAR -->
+      <aside class="col-md-3 col-lg-2 bg-dark sidebar p-3">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Profile</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Settings</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="col-md-9 col-lg-10 p-4">
+
+        <!-- CAROUSEL -->
+        <div id="carouselExample" class="carousel slide mb-4">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_2t/23027.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_2t/9292.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_2t/14420.png" class="d-block w-100">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- CARDS SECTION -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_2t/16786.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some quick example text.</p>
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_2t/10828.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some quick example text.</p>
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_2t/8801.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some quick example text.</p>
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

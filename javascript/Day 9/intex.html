@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Error Handling</title>
+  </head>
+  <body>
+    <!-- Error is a problem that stops or effects the normal of code -->
+
+    <input type="text" name="number" id="input" />
+    <button onclick="check()">check</button>
+    <p id="output"></p>
+
+    <script>
+      function check() {
+        try {
+          let value = document.getElementById("input").value;
+
+          if (value === "") {
+            throw new Error("input cannot be empty");
+          }
+
+          let n = Number(value);
+          console.log(value)
+          if(isNaN(n)){
+            throw new Error("input must be in number");
+          }
+
+        if (n < 0) {
+            throw new Error("number must be positive");
+          }
+          document.getElementById("output").innerText = "valid number";
+        } catch (e) {
+          document.getElementById("output").innerText = e.message;
+        }
+      }
+    </script>
+  </body>
+</html>
